@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nguyen Hoai Nam - Profile</title>
-  <meta name="description" content="Static personal profile website for Nguyen Hoai Nam." />
+  <meta name="description" content="Nguyen Hoai Nam portfolio with profile, academic background, and project showcase from GitHub repositories." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -21,7 +21,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
   <header>
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light nav-shell fixed-top">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#home">Hoai Nam</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,22 +45,50 @@
   <main>
     <section id="home" class="hero-section d-flex align-items-center">
       <div class="container py-5">
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center g-4 g-lg-5">
           <div class="col-lg-7">
-            <p class="eyebrow mb-2">Personal Profile</p>
-            <h1 class="display-5 fw-bold mb-3">Hello, I am Nguyen Hoai Nam</h1>
-            <p class="lead mb-4">A motivated learner who enjoys building clean web interfaces, solving practical problems, and continuously improving every day.</p>
+            <p class="eyebrow mb-2">Nguyen Hoai Nam • Student Developer</p>
+            <h1 class="display-5 fw-bold mb-3">Building practical digital products with clean interfaces and clear logic.</h1>
+            <p class="lead mb-4">I am an Information Technology student who enjoys turning ideas into web experiences with strong structure, usability, and maintainable code.</p>
             <div class="d-flex flex-wrap gap-2">
               <a href="#projects" class="btn btn-brand btn-lg">View Projects</a>
               <a href="assets/docs/NguyenHoaiNam_CV.pdf" class="btn btn-outline-success btn-lg" download>Download CV</a>
               <a href="#contact" class="btn btn-outline-dark btn-lg">Get In Touch</a>
             </div>
+            <div class="hero-meta mt-4">
+              <span>Based in Viet Nam</span>
+              <span>Open for internship and collaboration</span>
+            </div>
+            <div class="theme-switcher mt-4" aria-label="Style mode switcher">
+              <p class="theme-switcher-label mb-2">Choose Style Mood</p>
+              <div class="theme-switcher-buttons">
+                <button class="theme-btn active" data-theme="luxury" type="button">Luxury Clean</button>
+                <button class="theme-btn" data-theme="editorial" type="button">Editorial Bold</button>
+                <button class="theme-btn" data-theme="tech" type="button">Tech Dark Glass</button>
+              </div>
+            </div>
           </div>
           <div class="col-lg-5">
-            <div class="profile-card p-3 p-md-4">
-              <img src="assets/images/personal/Avt.jpg" alt="Nguyen Hoai Nam profile" class="img-fluid rounded-4 profile-image" />
-              <p class="small text-muted mb-0 mt-3">Replace this image with your personal photo in <strong>assets/images/personal/</strong> and update the image path in this section if needed.</p>
-            </div>
+            <aside class="profile-card profile-card--compact p-4 p-md-5">
+              <div class="avatar-shell">
+                <img src="assets/images/personal/Avt.jpg" alt="Nguyen Hoai Nam profile" class="img-fluid profile-image" />
+              </div>
+              <div class="profile-identity mt-3">
+                <h2 class="h5 mb-1">Nguyen Hoai Nam</h2>
+                <p class="mb-0">Frontend / Fullstack Learner</p>
+              </div>
+              <div class="profile-mini-list mt-3">
+                <div>
+                  <span>Education</span>
+                  <strong>HUIT (2023 - Present)</strong>
+                </div>
+                <div>
+                  <span>GitHub</span>
+                  <strong>9 Public Repositories</strong>
+                </div>
+              </div>
+              <a class="btn btn-brand w-100 mt-3" href="https://github.com/HoaiNam2k5?tab=repositories" target="_blank" rel="noopener noreferrer">Explore GitHub Repositories</a>
+            </aside>
           </div>
         </div>
       </div>
@@ -72,7 +100,7 @@
           <div class="col-lg-6">
             <h2 class="section-title">About Me</h2>
             <p>I am interested in technology, product thinking, and practical software development. I enjoy building user-friendly experiences and writing maintainable code that can grow over time.</p>
-            <p>I value clarity, consistency, and teamwork. I am always open to feedback and new opportunities to learn.</p>
+            <p>I am currently studying Information Technology at Ho Chi Minh City University of Industry and Trade and continuously improving my real-world project delivery skills.</p>
           </div>
           <div class="col-lg-6">
             <div class="info-grid">
@@ -104,8 +132,8 @@
         <div class="timeline-wrap">
           <article class="timeline-item">
             <span class="timeline-date">2023 - Present</span>
-            <h3>University Study - Information Technology</h3>
-            <p>Building strong fundamentals in software engineering, web development, and collaborative project workflows.</p>
+            <h3>Ho Chi Minh City University of Industry and Trade (HUIT)</h3>
+            <p>Bachelor of Information Technology. Building strong fundamentals in software engineering, web development, databases, and collaborative project workflows.</p>
           </article>
           <article class="timeline-item">
             <span class="timeline-date">2024</span>
@@ -123,8 +151,8 @@
 
     <section id="skills" class="section-space section-soft">
       <div class="container">
-        <h2 class="section-title text-center mb-4">Skills</h2>
-        <div class="row g-3">
+        <h2 class="section-title text-center mb-4">Skills & Academic Profile</h2>
+        <div class="row g-3 mb-4">
           <div class="col-sm-6 col-lg-3"><div class="skill-pill">HTML5 & Semantic Layout</div></div>
           <div class="col-sm-6 col-lg-3"><div class="skill-pill">CSS3 & Bootstrap</div></div>
           <div class="col-sm-6 col-lg-3"><div class="skill-pill">JavaScript (ES6+)</div></div>
@@ -134,41 +162,65 @@
           <div class="col-sm-6 col-lg-3"><div class="skill-pill">UI/UX Attention</div></div>
           <div class="col-sm-6 col-lg-3"><div class="skill-pill">Problem Solving</div></div>
         </div>
+        <div class="school-skill-card">
+          <p class="school-label mb-2">Academic Skills</p>
+          <h3 class="h4 mb-2">Ho Chi Minh City University of Industry and Trade (HUIT)</h3>
+          <p class="mb-3">Bachelor of Information Technology, 2023 - Present</p>
+          <div class="school-tags">
+            <span>Software Engineering</span>
+            <span>Data Structures and Algorithms</span>
+            <span>Database Systems</span>
+            <span>Web Development</span>
+            <span>Team Project Collaboration</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section-space">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
-          <h2 class="section-title text-center mb-0">Featured Projects</h2>
-          <a class="btn btn-outline-dark" href="projects.html">Open Detail Page</a>
+          <div>
+            <h2 class="section-title text-center text-lg-start mb-1">Featured GitHub Projects</h2>
+            <p class="text-muted mb-0">Selected from github.com/HoaiNam2k5 repositories.</p>
+          </div>
+          <a class="btn btn-outline-dark" href="projects.html">Open Full Repository Showcase</a>
         </div>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100">
-              <h3 class="h5">Portfolio Website</h3>
-              <p>A personal web profile with responsive layout and clean navigation.</p>
-              <span class="badge text-bg-light">HTML</span>
-              <span class="badge text-bg-light">Bootstrap</span>
-              <div class="mt-3"><a href="projects.html#portfolio-project" class="project-link">See detail</a></div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="project-card h-100">
-              <h3 class="h5">Task Manager</h3>
-              <p>A simple productivity app for daily planning and progress tracking.</p>
+              <h3 class="h5">autohub-oracle-system</h3>
+              <p>Enterprise-style car sales system project with practical product and workflow thinking.</p>
               <span class="badge text-bg-light">JavaScript</span>
-              <span class="badge text-bg-light">UI</span>
-              <div class="mt-3"><a href="projects.html#task-manager-project" class="project-link">See detail</a></div>
+              <span class="badge text-bg-light">System Design</span>
+              <div class="mt-3"><a href="https://github.com/HoaiNam2k5/autohub-oracle-system" class="project-link" target="_blank" rel="noopener noreferrer">Open on GitHub</a></div>
             </article>
           </div>
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100">
-              <h3 class="h5">Landing Page</h3>
-              <p>A conversion-focused landing page with strong visual hierarchy.</p>
-              <span class="badge text-bg-light">Responsive</span>
-              <span class="badge text-bg-light">CSS</span>
-              <div class="mt-3"><a href="projects.html#landing-project" class="project-link">See detail</a></div>
+              <h3 class="h5">realtime-chat-system</h3>
+              <p>Client-server realtime chat application focused on communication flow and interactive behavior.</p>
+              <span class="badge text-bg-light">C#</span>
+              <span class="badge text-bg-light">Realtime</span>
+              <div class="mt-3"><a href="https://github.com/HoaiNam2k5/realtime-chat-system" class="project-link" target="_blank" rel="noopener noreferrer">Open on GitHub</a></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <h3 class="h5">phone-sales-system</h3>
+              <p>Electronic warehouse and phone sales management project with operational data handling.</p>
+              <span class="badge text-bg-light">HTML</span>
+              <span class="badge text-bg-light">Management System</span>
+              <div class="mt-3"><a href="https://github.com/HoaiNam2k5/phone-sales-system" class="project-link" target="_blank" rel="noopener noreferrer">Open on GitHub</a></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <h3 class="h5">Deep_Learning_Practice</h3>
+              <p>Hands-on deep learning notebooks used to practice model concepts and experimentation workflows.</p>
+              <span class="badge text-bg-light">Jupyter Notebook</span>
+              <span class="badge text-bg-light">Machine Learning</span>
+              <div class="mt-3"><a href="https://github.com/HoaiNam2k5/Deep_Learning_Practice" class="project-link" target="_blank" rel="noopener noreferrer">Open on GitHub</a></div>
             </article>
           </div>
         </div>
@@ -180,10 +232,10 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2 class="section-title mb-3">Contact</h2>
-            <p class="mb-4">You can update your real contact links below when needed.</p>
+            <p class="mb-4">Connect with me for internships, collaborations, or project discussions.</p>
             <div class="d-flex flex-wrap justify-content-center gap-3">
               <a class="btn btn-outline-dark" href="#" aria-label="Email">Email</a>
-              <a class="btn btn-outline-dark" href="#" aria-label="GitHub">GitHub</a>
+              <a class="btn btn-outline-dark" href="https://github.com/HoaiNam2k5" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
               <a class="btn btn-outline-dark" href="#" aria-label="LinkedIn">LinkedIn</a>
             </div>
           </div>
